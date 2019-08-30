@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+  <style>
+    :root {
+  /* Set fade in duration */
+  --fade-time: 0.5s;
+}
+
+body {
+  margin: 5px;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+  font-weight: 360;
+  line-height: 130%;
+  
+}
+
+#stars{
+  font-weight: bold;
+  font-size: large;
+}
+
+.checked{
+  color:orange;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  border: #fff solid 1px;
+ 
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.imgs img {
+  cursor: pointer;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn var(--fade-time) ease-in 1 forwards;
+}
+
+/* Media Queries */
+@media(max-width: 600px) {
+  .imgs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+  <div class="activities" style="margin: auto; padding: 0px;"> 
+
+       
+        <span id="stars">Hotel Kempinski - Estepona</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span><sup>Grand Luxe</sup></span>      <!-- si el hotel es gran lujo, o business etc..., ponerlo aqui -->
+
+                                               <!--insertar titulo-->
+    <p> Kempinski Hotel Bahía Beach Resort & Spa is a luxurious beachfront hotel overlooking the Mediterranean, just 15 minutes’ drive from Puerto Banus. It features 3 outdoor swimming pools, gardens and a spa.</p>
+
+    <p> Rooms at the Kempinski Marbella are luxurious and feature a balcony or terrace. Each room has a flat-screen TV with satellite channels, and a marble bathroom with hairdryer.</p>
+
+    <p> Facilities at the Kempinski Hotel Bahía Beach Resort & Spa include a fitness studio with free fitness activities and tennis courts. The hotel spa has a sauna, steam room, indoor pool, and 6 treatment rooms. </p>
+
+    <p> The Kempinski has a buffet restaurant and 3 further restaurants, offering a range of Mediterranean cuisine. Guests can enjoy a drink on the terrace or at the poolside snack bar.</p>
+
+  
+
+
+                     <!--insertar el texto-->
+    <hr>
+  </div>
+	<div class="container">
+    <div class="main-img">
+      <img src="Kempinski4.jpg" id="current">
+    </div>
+
+    <div class="imgs">                                          <!--insertar las fotos-->
+      <img src="Kempinski4.jpg">
+      <img src="Kempinski5.jpg">
+      <img src="Kempinski6.jpg">
+      <img src="Kempinski7.jpg">
+      <img src="Kempinski8.jpg">
+      <img src="Kempinski9.jpg">
+      <img src="Kempinski10.jpg">
+      <img src="Kempinski11.jpg">
+    </div>
+  </div>
+  <hr>
+  
+  <section class="container">
+
+<div class ="one" style="float: left;
+    padding: 10px; background-color: rgba(238, 238, 238, 0.6)">
+<p><i class="fa fa-map-o" style="font-size:20px;color:orange;"></i>   <!--insertar la info relevante a los iconos-->
+<span style="margin: 0 20px; font-size:14px"><b> Location:</b> Estepona</p></span>
+<p><i class="fa fa-h-square" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 22px; font-size:14px"><b> Category:</b> 5 stars</p></span>
+<p><i class="fa fa-cutlery" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 22px; font-size:14px"><b> Restaurants:</b> 2 Restaurants and 32 bars</p></span>
+<p><i class="fa fa-wifi" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 20px; font-size:14px"><b> Wifi:</b> Available in rooms and common areas</p></span>
+<p><i class="fa fa-users" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 14px"><b>Nr. Rooms:</b>145</p></span>
+
+</div>
+
+<div class ="two" style="float: right;
+    padding: 10px; background-color: rgba(238, 238, 238, 0.6); ">
+<p><i class="fa fa-wheelchair" style="font-size:20px;color:orange;"></i>    <!--insertar la info relevante a los iconos-->
+<span style="margin: 0 21px, font-size:14px"><b> Handicapped facilities: </b>Yes</p></span>
+<p><i class="fa fa-shower" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 20px; font-size:14px"><b> Swimmingpool:</b> Yes. Outdoor and Indoor</p></span>
+<p><i class="fa fa-clock-o" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 21px; font-size:14px"><b> Check in/out:</b> 3pm /noon</p></span>
+<p><i class="fa fa-coffee" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 20px; font-size:14px"><b> Meeting rooms:</b> 9 rooms: min 20 - max 150 pax</p></span>
+</div>
+</section>
+</div> 
+	<script>
+		const current = document.querySelector('#current');
+const imgs = document.querySelector('.imgs');
+const img = document.querySelectorAll('.imgs img');
+const opacity = 0.6;
+
+// Set first img opacity
+img[0].style.opacity = opacity;
+
+imgs.addEventListener('click', imgClick);
+
+function imgClick(e) {
+  // Reset the opacity
+  img.forEach(img => (img.style.opacity = 1));
+
+  // Change current image to src of clicked image
+  current.src = e.target.src;
+
+  // Add fade in class
+  current.classList.add('fade-in');
+
+  // Remove fade-in class after .5 seconds
+  setTimeout(() => current.classList.remove('fade-in'), 500);
+
+  // Change the opacity to opacity var
+  e.target.style.opacity = opacity;
+}
+
+	</script>
+</body>
+</html>

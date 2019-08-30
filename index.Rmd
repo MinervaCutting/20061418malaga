@@ -1,0 +1,209 @@
+---
+title: "AUDIKA GROUP 2020"
+author: "Jette Toft Borner"
+date: 'From 14th June to 18th June 2020'
+output:
+ 
+  html_document:
+    css: FORMATO.css
+    toc: yes
+    toc_float: yes
+    toc_depth: 6
+---
+
+<script> 
+    $(document).ready(function() { 
+    $head = $('#header'); 
+    $head.prepend('<A href = https://www.cuttingedge-events.com><img src ="LOGO.png" width="150" vspace="50" align="right"></A>') 
+    }); 
+</script> 
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+```
+
+
+```{r libraries}
+library(readxl)
+library(shiny)
+library(dplyr)
+library(knitr)
+library(timevis)
+
+```
+
+<br>
+
+# Malaga-Costa del Sol
+
+Magala's Aiport has a lot of direct flight connections. 
+Costa del Sol offers very good weather and very nice hotels with wonderful seaviews.
+
+<iframe src="https://www.google.com/maps/d/embed?mid=1Dsd3LKRpe1SLWuvR3eiYDv4sDU7Ryjv6&hl=es" width="100%" height="550"></iframe>
+
+For Audika we would suggest two options: Kempinski (75km from the Airport) and H10 Andalucia Plaza (60km from the Airport)
+Both hotels are very good hotels with meeting facilities suitable to host a meeting for 125 pax in cabaret style.
+
+As you can see on the map there are a lot of restaurant and venue options suitable for the group in this area.
+
+<br>
+
+##  Suggested Hotels {.tabset .tabset-fade .tabset-pills}
+
+### KEMPINSKI
+
+<iframe src="KEMPINSKI/Kempinski.html"  frameborder="0" width="100%" height="1200" scrolling="no"></iframe>
+
+<br>
+
+ **AUDIKA GROUP ACCOMMODATION**
+
+The hotel has 128 rooms with 40-45m2 each plus 17 suites.
+
+Audika would have 125 rooms, all of them with similar size but not all with the same views or decoration.
+
+<img src = "https://r-cf.bstatic.com/images/hotel/max1024x768/720/72044667.jpg" width="100%">
+
+<br>
+
+<img src = "https://q-cf.bstatic.com/images/hotel/max1024x768/720/72045630.jpg" width="100%">
+
+<br>
+
+
+ **MEETING FACILITIES**
+
+Meeting room floor plan:
+
+<br>
+
+<img src = "KEMPINSKI/kempinski1.png" width="100%">
+
+Following the request, we propose the following meeting rooms for AUDIKA meetings:
+
+* **Plenary room** *Poniente I&II*  Capacity in cabaret style for 150pax. Features natural sunlight.
+
+<img src = "KEMPINSKI/kempinski2.png" width="100%">
+
+<br>
+
+* **Breakout room** *Levante* capacity for 50 pax and daylight
+
+
+<img src = "KEMPINSKI/kempinski3.png" width="100%">
+
+<br>
+
+<br>
+
+**DINNERS**
+
+Kempinski Hotel has different options for the welcome and Gala dinners
+
+<img src ="https://r-cf.bstatic.com/images/hotel/max1024x768/145/145474783.jpg" width="100%">
+
+<br>
+
+<img src ="https://r-cf.bstatic.com/images/hotel/max1024x768/194/194328670.jpg" width="100%">
+
+<br>
+
+<img src ="https://r-cf.bstatic.com/images/hotel/max1024x768/144/144327278.jpg" width="100%">
+
+
+<br>
+<hr>
+
+### H10 ANDALUCIA PLAZA
+
+<iframe src="H10 ANDALUCIA PLAZA/H10AndaluciaPalza.html"  frameborder="0" width="100%" height="1300" scrolling="no"></iframe>
+
+<br>
+
+ **AUDIKA GROUP ACCOMMODATION**
+
+The hotel has 400 rooms in total.
+
+Audika would have 125 rooms with the same level.
+
+<img src = "https://cmspro.h10hotels.com/ImagenesHotel/standard%20(3).jpg" width="100%">
+
+<br>
+
+<img src = "https://cmspro.h10hotels.com/ImagenesHotel/standard%20(1).jpg" width="100%">
+
+<br>
+
+ **MEETING FACILITIES**
+
+Following the request, we propose the following meeting rooms for AUDIKA meetings:
+
+* **Plenary room** *Castilla A+B+C*  500m2 Capacity in cabaret style for 150pax. Features natural sunlight.
+
+<br>
+
+<img src = "H10 ANDALUCIA PLAZA/H10AP3.jpg" width="100%">
+
+
+* **Breakout room** *Málaga* capacity for 50 pax and daylight
+
+<br>
+
+<img src = "H10 ANDALUCIA PLAZA/H10AP4.jpg" width="100%">
+
+
+
+<br>
+
+**DINNERS**
+
+The Hotel has different options for the welcome and Gala dinners
+
+<img src = "H10 ANDALUCIA PLAZA/H10AP2.jpg" width="100%">
+
+<br>
+
+<img src ="https://r-cf.bstatic.com/images/hotel/max1024x768/935/93540020.jpg" width="100%">
+
+<br>
+
+<img src ="https://r-cf.bstatic.com/images/hotel/max1024x768/153/15324544.jpg" width="100%">
+
+
+
+## Budget {.tabset .tabset-fade .tabset-pills}
+
+### H10 Andalucia Plaza Budget
+
+
+<iframe src="https://audikah10budget.netlify.com"  frameborder="0" width="100%" height="800" scrolling="no"></iframe>
+<hr>
+
+
+### Kempinski Budget
+
+
+<iframe src="https://audikakempinskibudget.netlify.com/"  frameborder="0" width="100%" height="800" scrolling="no"></iframe>
+<hr>
+
+
+
+# Terms and conditions
+
+  * Rates valid for 2020
+  
+  * For a group of minimum 115 pax.
+  
+  * Cutting Edge Events management fee including in the detailed rates
+  
+  * VAT included. 
+  
+  * No reservation has been done. Availability upon request.
+  
+*****
+
+
+
+
+
